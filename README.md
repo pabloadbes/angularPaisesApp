@@ -1,6 +1,10 @@
 # PaisesApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.6.
+This project is part of the course "Angular: From zero to expert". 
+Instructor: Fernando Herrera. https://www.dev-talles.com
+        
+[Try it!](https://bright-strudel-5805e7.netlify.app/)
 
 ## Development server
 

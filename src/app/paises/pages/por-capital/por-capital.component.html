@@ -1,0 +1,24 @@
+<div class="animate__animated animate__fadeIn animate__faster">
+    <h2>Por capital</h2>
+    <hr>
+    <div class="row">
+        <div class="col">
+            <app-busqueda 
+                (onBuscar)="buscar( $event )"
+                (onDebounce)="sugerencias( $event )"
+                placeholder="Buscar Capital...">
+            </app-busqueda>
+        </div>
+    </div>
+    <div    class="alert alert-danger"
+            *ngIf="hayError">
+        No se encontró nada con el término {{ termino | uppercase }}
+    </div>
+    <hr>
+    <div *ngIf="paises.length>0" class="row">
+        <div class="col">
+            <app-pais-tabla [paises]="paises"></app-pais-tabla>
+        </div>
+    </div>    
+</div>
+
